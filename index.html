@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Index</title>
+    <style>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+    background-color: #3498db;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Project grid (using CSS Grid) */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Project card styles */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    margin: 10px 0;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.project-card a:hover {
+    background-color: #2980b9;
+}
+
+.project-grid .project-card .project-level {
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/* Footer styles */
+footer {
+    background-color: #3498db;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>100 Project | Web Development</h1>
+    </header>
+
+    <main>
+        <h2>Beginner Level Projects</h2>
+        <section class="project-grid">
+            <!-- Repeat this card structure for each project -->
+            <div class="project-card">
+                <img src="./image/portfolio-level-1.PNG" alt="Portfolio website">
+                <h2>Portfolio Page</h2>
+                <p>A portfolio website that showcase your work and skills.</p>
+                <a href="https://code2crown.github.io/portfolio-level-1/" target="_blank">Learn More</a>
+            </div>
+            <!-- Repeat for more projects -->
+            
+            
+        </section>
+    </main>
+    
+    <footer>
+        Made with ♥ Code 2 Crown</p>
+    </footer>
+</body>
+</html>
