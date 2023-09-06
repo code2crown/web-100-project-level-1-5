@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <style>
+      /* Reset some default styles */
+body, h1, h2, h3, p, ul, li, ol, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Style individual recipe sections */
+.recipe {
+    width: 45%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: 400px;
+}
+
+/* Style headings for ingredients and instructions */
+.recipe h3 {
+    margin-top: 10px;
+}
+
+/* Style lists for ingredients and instructions */
+.recipe ul, .recipe ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Recipes</h1>
+    </header>
+
+    <main>
+        <!-- Recipe 1 -->
+        <article class="recipe">
+            <h2>Chocolate Chip Cookies</h2>
+            <img src="./image/chocolate.jpg" alt="Chocolate Chip Cookies">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 1/4 cups all-purpose flour</li>
+                <li>1/2 teaspoon baking soda</li>
+                <li>1 cup unsalted butter, room temperature</li>
+                <li>1/2 cup granulated sugar</li>
+                <li>1 cup packed light-brown sugar</li>
+                <li>1 teaspoon salt</li>
+                <li>2 teaspoons pure vanilla extract</li>
+                <li>2 large eggs</li>
+                <li>2 cups semisweet and/or milk chocolate chips</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Preheat oven to 350 degrees.</li>
+                <li>In a small bowl, whisk together the flour and baking soda; set aside.</li>
+                <li>In a large bowl, mix the butter, granulated sugar, brown sugar, and salt until creamy.</li>
+                <li>Beat in the eggs and vanilla until well combined.</li>
+                <li>Add the flour mixture and stir in the chocolate chips.</li>
+                <li>Drop rounded tablespoons of dough onto baking sheets.</li>
+                <li>Bake until the edges are golden but the centers are still soft, about 10 minutes.</li>
+                <li>Cool on the baking sheets for a few minutes before transferring to wire racks.</li>
+            </ol>
+        </article>
+
+        <!-- Recipe 2 -->
+        <article class="recipe">
+            <h2>Classic Margherita Pizza</h2>
+            <img src="./image/pizza.jpg" alt="Margherita Pizza">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 pizza dough</li>
+                <li>1/2 cup tomato sauce</li>
+                <li>1 1/2 cups fresh mozzarella cheese</li>
+                <li>6-8 fresh basil leaves</li>
+                <li>2 tablespoons olive oil</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Preheat your oven to the highest setting (usually around 500°F or 260°C).</li>
+                <li>Roll out the pizza dough on a floured surface to your desired thickness.</li>
+                <li>Spread tomato sauce evenly over the dough.</li>
+                <li>Add mozzarella cheese on top.</li>
+                <li>Tear basil leaves and sprinkle over the pizza.</li>
+                <li>Drizzle olive oil and season with salt and pepper.</li>
+                <li>Bake in the preheated oven until the crust is golden and the cheese is bubbly and slightly browned, about 10-12 minutes.</li>
+            </ol>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Delicious Recipes</p>
+    </footer>
+</body>
+</html>
 
