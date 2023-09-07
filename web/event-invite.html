@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <style>
+      /* Reset some default styles */
+body, h1, h2, p, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style event details section */
+.event-details {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Style RSVP section */
+.rsvp {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Style labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Style the RSVP button */
+button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #258cd1;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>You're Invited!</h1>
+        <p>Join Us for a Special Event</p>
+    </header>
+
+    <main>
+        <section class="event-details">
+            <h2>Event Details</h2>
+            <p><strong>Date:</strong> January 15, 2024</p>
+            <p><strong>Time:</strong> 5:00 PM - 8:00 PM</p>
+            <p><strong>Location:</strong> 123 Main Street, Cityville</p>
+        </section>
+
+        <section class="rsvp">
+            <h2>RSVP</h2>
+            <p>Please RSVP by January 5, 2024</p>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">RSVP</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Event Invitation</p>
+    </footer>
+</body>
+</html>
