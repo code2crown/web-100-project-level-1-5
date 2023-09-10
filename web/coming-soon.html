@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+      /* Reset some default styles */
+body, h1, p, img, .countdown, .label, .days, .hours, .minutes, .seconds {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the coming soon section */
+.coming-soon {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Style the countdown timer */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.countdown span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.label {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Style the footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="coming-soon">
+            <img src="./image/coming-soon.jpg" alt="Coming Soon Teaser">
+            <h1>Coming Soon</h1>
+            <p>We're working on something exciting! Stay tuned for updates.</p>
+            <div class="countdown">
+                <span class="days">00</span>
+                <span class="label">Days</span>
+                <span class="hours">00</span>
+                <span class="label">Hours</span>
+                <span class="minutes">00</span>
+                <span class="label">Minutes</span>
+                <span class="seconds">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Coming Soon</p>
+    </footer>
+</body>
+</html>
