@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+      /* Reset some default styles */
+body, h1, h2, p, img, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style the product section */
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+/* Style the product image */
+.product img {
+    max-width: 100%;
+    height: 200px;
+}
+
+/* Style product details */
+.product-details {
+    max-width: 400px;
+    text-align: left;
+}
+
+.product-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Style the Buy Now button */
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #258cd1;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Product</h1>
+        <p>The Best Solution for Your Needs</p>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="./image/product.jpg" alt="Product Image">
+            <div class="product-details">
+                <h2>Product Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id justo nec urna rhoncus blandit.</p>
+                <p class="price">$99.99</p>
+                <button>Buy Now</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Our Product</p>
+    </footer>
+</body>
+</html>
