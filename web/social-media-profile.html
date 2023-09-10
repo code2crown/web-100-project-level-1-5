@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <style>
+      /* Reset some default styles */
+body, h1, p, img, .bio, .post {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style the profile section */
+.profile {
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.profile img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Style individual posts */
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>@johndoe</p>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="./image/team-1.jpg" alt="Profile Picture">
+            <p class="bio">Web Developer | Travel Enthusiast | Coffee Lover</p>
+        </section>
+
+        <section class="posts">
+            <div class="post">
+                <img src="./image/mountain.jpg" alt="Post 1">
+                <p>Enjoying the view from the top of the mountain! 🏔️ #TravelGoals</p>
+            </div>
+
+            <div class="post">
+                <img src="./image/morning.jpg" alt="Post 2">
+                <p>Starting the day with a fresh cup of coffee. ☕ Good morning!</p>
+            </div>
+
+            <!-- Add more posts here -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Social Media Profile</p>
+    </footer>
+</body>
+</html>
