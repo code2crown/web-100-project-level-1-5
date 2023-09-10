@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+      /* Reset some default styles */
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style the pricing table */
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style individual pricing plans */
+.plan {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plan p.price {
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.plan li {
+    margin-bottom: 5px;
+}
+
+.plan button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: #258cd1;
+}
+
+/* Style the recommended plan */
+.recommended {
+    background-color: #ccc;
+    color: #fff;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Choose a Plan</h1>
+        <p>Find the perfect plan for your needs.</p>
+    </header>
+
+    <main>
+        <section class="pricing-table">
+            <div class="plan">
+                <h2>Basic</h2>
+                <p class="price">$9.99/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button>Select Plan</button>
+            </div>
+
+            <div class="plan recommended">
+                <h2>Premium</h2>
+                <p class="price">$19.99/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                </ul>
+                <button>Select Plan</button>
+            </div>
+
+            <div class="plan">
+                <h2>Pro</h2>
+                <p class="price">$29.99/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                </ul>
+                <button>Select Plan</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Pricing Table</p>
+    </footer>
+</body>
+</html>
