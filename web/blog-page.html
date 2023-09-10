@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+      /* Reset some default styles */
+body, h1, h2, p, img, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Style individual blog posts */
+.blog-post {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+}
+
+.date {
+    color: #888;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <main>
+        <!-- Blog Post 1 -->
+        <article class="blog-post">
+            <img src="./image/blog-post-1.png" alt="Blog Post 1">
+            <h2>Post Title 1</h2>
+            <p class="date">August 1, 2023</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget libero nec arcu cursus hendrerit.</p>
+            <a href="#">Read More</a>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-post">
+            <img src="./image/blog-post-2.png" alt="Blog Post 2">
+            <h2>Post Title 2</h2>
+            <p class="date">August 5, 2023</p>
+            <p>Phasellus vitae velit id nulla malesuada cursus. Proin vel semper sapien.</p>
+            <a href="#">Read More</a>
+        </article>
+
+        <!-- Add more blog posts here -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 My Blog</p>
+    </footer>
+</body>
+</html>
