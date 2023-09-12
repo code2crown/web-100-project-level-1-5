@@ -3,120 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page with Image Slider</title>
+    <title>LANDING PAGE WITH IMAGE SLIDER</title>
     <style>
-      /* Reset some default styles */
-body, h1, img, button {
+        *{
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
     text-align: center;
-    padding: 20px;
-}
-
-/* Style the main content */
-main {
-    text-align: center;
-    position: relative;
-}
-
-/* Style the slider container */
-.slider-container {
-    display: flex;
-    overflow: hidden;
-    animation: slide 5s infinite;
-}
-
-.slider-image {
-    max-width: 100%;
-    height: 100vh;
-}
-
-/* Style the slider navigation buttons */
-.prev-button,
-.next-button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
-.prev-button {
-    left: 10px;
-}
-
-.next-button {
-    right: 10px;
-}
-
-/* Style the footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
     padding: 10px;
-    background-color: #000;
-    color: #fff;
 }
 
-/* Keyframes for image slide animation */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    animation: slide 5s infinite alternate;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
 @keyframes slide {
     0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(0);
-    }
-    30% {
-        transform: translateX(-100%);
-    }
-    55% {
-        transform: translateX(-100%);
-    }
-    60% {
-        transform: translateX(-200%);
-    }
-    85% {
-        transform: translateX(-200%);
-    }
-    90% {
-        transform: translateX(-300%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-300%);
+        transform: translateX(-200%);
     }
+
 }
+
 
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Website</h1>
+        <h1>Welcome to our website</h1>
     </header>
 
-    <main>
-        <div class="slider-container">
-            <img src="../image/img-1.jpg" alt="Image 1" class="slider-image">
-            <img src="../image/img-2.jpg" alt="Image 2" class="slider-image">
-            <img src="../image/img-3.jpg" alt="Image 3" class="slider-image">
+    <div class="slider-container">
+        <div class="slider">
+            <img src="./image/img-1.jpg" alt="Image 1">
+            <img src="./image/img-2.jpg" alt="Image 2">
+            <img src="./image/img-3.jpg" alt="Image 3">
         </div>
-        <button class="prev-button">&#10094;</button>
-        <button class="next-button">&#10095;</button>
-    </main>
-    
-    <footer>
-        <p>&copy; 2023 Our Website</p>
-    </footer>
+    </div>
 </body>
 </html>
