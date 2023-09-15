@@ -4,129 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Page</title>
-    <style>
-      /* Reset some default styles */
-body, h1, h2, h3, p, ul, li, ol, img {
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter&display=swap');
+
+
+*{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #272727;
+}
+.container {
+    max-width: 600px;
+    position: relative;
+    top: 40px;
+    left: 25%;
 }
 
-/* Style the header */
-header {
-    background-color: #000;
+.title {
     color: #fff;
-    text-align: center;
-    padding: 20px;
+    padding: 40px;
+    font-size: 30px;
+    margin: 0 0 12px;
+    border-bottom: 1px solid #353939;
 }
 
-/* Style the main content */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-/* Style individual recipe sections */
-.recipe {
-    width: 45%;
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f2f2f2;
-}
-
-.recipe img {
-    max-width: 100%;
+.image img {
     height: 400px;
+    width: 600px;
+    border-radius: 5px;
+    margin-top: 40px;
 }
 
-/* Style headings for ingredients and instructions */
-.recipe h3 {
-    margin-top: 10px;
+.caption {
+    color: #a3a9a9;
+    font-size: 13px;
+    padding: 0 0 9px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid #353939;
 }
 
-/* Style lists for ingredients and instructions */
-.recipe ul, .recipe ol {
-    margin-left: 20px;
+p {
+    font-size: 17px;
+    color: #ffffffcc;
+    line-height: 30px;
+}
+
+.ingredients {
+    border: 3px solid #608a29;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 40px 0;
+}
+
+.ingredients strong {
+    color: #d4d4d4;
+    font-size: 21px;
+}
+
+.ingredients ul {
+    margin: 20px 0;
+}
+
+.ingredients ul li {
+    color: #a3a9a9;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 8px 0 8px;
+    margin-left: 30px;
+    border-bottom: 1px solid #353939;
+}
+
+.instruction h2 {
+    color: #d4d4d4;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.instruction ol {
+    padding: 0 40px;
+}
+.instruction ol li{
+    color: #a3a9a9;
+    font-size: 17px;
+    line-height: 27px;
+    padding: 10px 0 10px 5px;
     margin-bottom: 10px;
+    border-bottom: 2px solid #353939;
 }
 
-/* Style the footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-}
 
-    </style>
+   </style>
 </head>
 <body>
-    <header>
-        <h1>Delicious Recipes</h1>
-    </header>
+    <section class="container">
+        <h1 class="title">Tandoori Chicken Kathi Roll Recipe</h1>
 
-    <main>
-        <!-- Recipe 1 -->
-        <article class="recipe">
-            <h2>Chocolate Chip Cookies</h2>
-            <img src="../image/chocolate.jpg" alt="Chocolate Chip Cookies">
-            <h3>Ingredients</h3>
-            <ul>
-                <li>2 1/4 cups all-purpose flour</li>
-                <li>1/2 teaspoon baking soda</li>
-                <li>1 cup unsalted butter, room temperature</li>
-                <li>1/2 cup granulated sugar</li>
-                <li>1 cup packed light-brown sugar</li>
-                <li>1 teaspoon salt</li>
-                <li>2 teaspoons pure vanilla extract</li>
-                <li>2 large eggs</li>
-                <li>2 cups semisweet and/or milk chocolate chips</li>
-            </ul>
-            <h3>Instructions</h3>
-            <ol>
-                <li>Preheat oven to 350 degrees.</li>
-                <li>In a small bowl, whisk together the flour and baking soda; set aside.</li>
-                <li>In a large bowl, mix the butter, granulated sugar, brown sugar, and salt until creamy.</li>
-                <li>Beat in the eggs and vanilla until well combined.</li>
-                <li>Add the flour mixture and stir in the chocolate chips.</li>
-                <li>Drop rounded tablespoons of dough onto baking sheets.</li>
-                <li>Bake until the edges are golden but the centers are still soft, about 10 minutes.</li>
-                <li>Cool on the baking sheets for a few minutes before transferring to wire racks.</li>
-            </ol>
-        </article>
+        <div class="image">
+            <img src="../image/kathi-roll.webp" alt="kathi-roll">
+            <p class="caption">How to Make Tandoori Chicken Kathi Roll</p>
+        </div>
 
-        <!-- Recipe 2 -->
-        <article class="recipe">
-            <h2>Classic Margherita Pizza</h2>
-            <img src="../image/pizza.jpg" alt="Margherita Pizza">
-            <h3>Ingredients</h3>
+        <p><strong>Tandoori Chicken Kathi Roll Recipe:</strong> This is a very tasty snack that can be made in few minutes. Boneless marinated chicken pieces are baked in the oven and then rolled into paratha along with vegetables and chutney.</p>
+
+        <div class="ingredients">
+            <strong>Ingredients of Tandoori Chicken Kathi Roll</strong>
+
             <ul>
-                <li>1 pizza dough</li>
-                <li>1/2 cup tomato sauce</li>
-                <li>1 1/2 cups fresh mozzarella cheese</li>
-                <li>6-8 fresh basil leaves</li>
-                <li>2 tablespoons olive oil</li>
-                <li>Salt and pepper to taste</li>
+                <li>350 gms boneless chicken</li>
+                <li>¾ cup yoghurt</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>2 tsp lemon juice</li>
+                <li>1 tsp tandoori masala</li>
+                <li>1 tsp Kashmiri red chilli powder</li>
+                <li>1 tsp cumin powder</li>
+                <li>1 tsp coriander powder</li>
+                <li>½ tsp haldi</li>
+                <li>2 tbsp oil</li>
+                <li>Salt, to taste</li>
+                <li>2-3 parathas</li>
+                <li>1 onion, sliced</li>
+                <li>1 tomato, sliced</li>
+                <li>A handful of coriander leaves
+                </li>
             </ul>
-            <h3>Instructions</h3>
+        </div>
+
+        <div class="instruction">
+            <h2>How to Make Tandoori Chicken Kathi Roll</h2>
+
             <ol>
-                <li>Preheat your oven to the highest setting (usually around 500°F or 260°C).</li>
-                <li>Roll out the pizza dough on a floured surface to your desired thickness.</li>
-                <li>Spread tomato sauce evenly over the dough.</li>
-                <li>Add mozzarella cheese on top.</li>
-                <li>Tear basil leaves and sprinkle over the pizza.</li>
-                <li>Drizzle olive oil and season with salt and pepper.</li>
-                <li>Bake in the preheated oven until the crust is golden and the cheese is bubbly and slightly browned, about 10-12 minutes.</li>
+                <li>To begin with, add the boneless chicken pieces to a bowl and combine them with the yoghurt and all
+                    the dry masalas. Add a drizzle of oil and mix well to combine everything.</li>
+                <li>Cover the bowl with a cloth and allow the chicken to marinate for at least 1 to 2 hours.</li>
+                <li>We’ll be cooking the chicken in an oven for this recipe. Preheat your oven to 180 degrees C and
+                    insert the marinated chicken onto skewers. Cook for 15-20 minutes or until done.</li>
+                <li>Now, heat the paratha on a tawa. Place the tandoori chicken in the centre and top it with sliced
+                    onions and tomatoes. You can also add coriander leaves and lemon juice for extra flavour.</li>
+                <li>Roll up the paratha nicely, ensuring that everything is in place. Secure it with a toothpick and
+                    serve along with pudina chutney.</li>
             </ol>
-        </article>
-    </main>
-    
-    <footer>
-        <p>&copy; 2023 Delicious Recipes</p>
-    </footer>
+        </div>
+    </section>
 </body>
 </html>
-
