@@ -1,84 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Page</title>
+    <title>FAQ</title>
     <style>
         *{
     margin: 0;
     padding: 0;
 }
 
-header, footer {
-    background-color: #000;
+header {
+    background-color: #ff6700;
     color: #fff;
+    padding: 60px;
     text-align: center;
-    padding: 20px;
+
 }
 
-main {
-    margin: 20px;
-    text-align: center;
+header h2 {
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .faq {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+    margin-top: 40px;
+    padding: 55px 124px 100px;
 }
 
-.question {
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
+#first {
+    margin-top: 16px;
 }
 
-.question h2 {
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-}
-
-.question p{
-    margin-bottom: 10px;
+.faq .question {
+    margin: 80px 0 20px;
+    font-size: 16px;
+    color: #212121;
+    text-transform: uppercase;
 }
 
 
+.faq .answer {
+    color: #898989;
+    font-size: 14px;
+    margin: 7px 0 14px;
+    line-height: 20px;
+}
+
+footer {
+    background-color: #ff6700;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Frequently Asked Questions</h1>
+        <h2>SHIppiNG FAQ</h2>
     </header>
-
     <main>
-        <section class="faq">
-            <article class="question">
-                <h2>What is HTML?</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore cupiditate reiciendis est accusantium doloribus eius.</p>
-            </article>
+        <div class="faq">
+            <h3 class="question" id="first">Do you offer free shipping?</h3>
+            <p class="answer">Yes, we do. All orders of ₹ 500 and above enjoy free delivery, while a nominal delivery charge of ₹ 50 is
+                applied on orders below ₹ 500.</p>
+            <h3 class="question">DO YOU OFFER CASH-ON-DELIVERY?
+            </h3>
+            <p class="answer">Yes, we do offer Cash-on-Delivery. Please enter your pin code on the product page to check if
+                Cash-on-Delivery is available in your location. The maximum Cash-on-Delivery amount permitted is Rs. 50,000. However, please note that it can vary from
+                one pin code to another.</p>
 
-            <article class="question">
-                <h2>Why we use HTML?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, laborum ipsa commodi neque molestias blanditiis quae temporibus. Animi, fugit quo?</p>
-            </article>
-            
-            <article class="question">
-                <h2>How does Internet Work?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae quas nihil ipsa, tempora, laudantium minus perspiciatis cumque nemo consequuntur doloribus incidunt non! Officia dolorem quas aliquam, est aperiam libero.</p>
-            </article>
+                <h3 class="question">WHY IS CASH-ON-DELIVERY NOT OFFERED FOR MY LOCATION?</h3>
+                <p class="answer">Availability of Cash-on-Delivery depends on the ability of our courier partner servicing your location to accept cash as payment at the time of delivery. In addition, our delivery partners have limits on the cash amount payable on delivery depending on the destination and your order value might have exceeded this limit.</p>
 
-            <article class="question">
-                <h2>How can i learn web development in easy way? </h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cum accusamus modi, culpa vitae ratione facere, ea enim iusto quas tempore dolores quam veniam maxime temporibus. Iste veritatis natus nam ullam, in magnam optio, quia officia molestias asperiores facere! Nobis?</p>
-            </article>
-        </section>
+                <h3 class="question">WHICH LOCATIONS DO YOU DELIVER TO?</h3>
+                <p class="answer">Please enter your pin-code on the product page (you don't have to enter it every single time) to know whether the product can be delivered to your location.
+
+                </p>
+
+                <h3 class="question">WHAT ARE YOUR DELIVERY TIMES?
+                </h3>
+                <p class="answer">Packages are delivered between 09:00 -19:00 from Monday to Saturday. There are no deliveries on Sunday and on public holidays.
+
+                </p>
+
+                <h3 class="question">HOW LONG WOULD IT TAKE FOR ME TO RECEIVE MY ORDER?
+                </h3>
+                <p class="answer">Users can check Estimated delivery time to their location at the product page.
+
+                </p>
+
+                <h3 class="question">HOW IS THE DELIVERY TIME CALCULATED?
+                </h3>
+                <p class="answer">Estimated delivery time depends on the following factors:
+
+                </p>
+        </div>
     </main>
-
     <footer>
         <p>Made with ♥ Code 2 Crown</p>
     </footer>
 </body>
+
 </html>
